@@ -151,15 +151,15 @@
         .footer {
             position: sticky;
             bottom: 0;
+            z-index: 1000;
             background-color: var(--footer-bg);
             color: var(--text-color);
-            padding: 10px 20px;
+            padding: 10px 10px 15px 10px;
             display: flex;
             justify-content: center;
             gap: 20px;
             align-items: center;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
             border-top: #7f7f7f29 1px solid;
         }
 
@@ -241,6 +241,20 @@
         .modal-content h3 {
             margin-top: 0;
             font-weight: 500;
+        }
+
+        .modal .bottom {
+            border-top: #7f7f7f29 1px solid;
+            color: #929292bb;
+            font-size: 0.8rem;
+            margin-top: 15px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .bottom a {
+            text-decoration: none;
+            color: rgba(245, 15, 138, 0.697);
         }
 
         .modal-content input {
@@ -335,6 +349,9 @@
                 <button id="save-settings">Save</button>
                 <button id="close-modal">Close</button>
             </div>
+            <div class="bottom">
+                Copyright © <a href="https://www.paralegal.lk">paralegal.lk</a> 2024 | All Rights Reserved.
+            </div>
 
         </div>
     </div>
@@ -350,6 +367,7 @@
         <button id="prev-btn" disabled>Previous</button>
         <div class="page-info">Page <span id="current-page">1</span> of <span id="total-pages">0</span></div>
         <button id="next-btn" disabled>Next</button>
+
     </div>
 
     <script>
